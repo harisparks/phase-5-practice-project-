@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ /* Add CSS styling for the grid layout */
+ #productList {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 20px;
+ }
+ 
+ .product {
+ text-align: center;
+ }
+ 
+ .product img {
+ width: 100%;
+ height: auto;
+ }
+ 
+ .addToCartButton {
+ display: block;
+ margin: 10px auto;
+ }
+ </style>
+</head>
+<body>
+ <h1>Welcome to the Website</h1>
+ <p id="welcomeMessage">Welcome, John Doe!</p>
+ <form id="searchForm">
+ <input type="text" id="searchBar" placeholder="Search...">
+ <button type="submit" id="searchButton">Search</button>
+ </form>
+ <h2>Product Listings</h2>
+<div id="productList">
+ <div class="product">
+ <h3 class="productTitle" id="searchResults">Laptop</h3>
+ <p>Description of Product 1</p>
+ <img src="data:image/jpeg;base64,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" alt="Product 1 Image">
+ <button class="addToCartButton" (click)="addToCart('Product 1')">Add to Cart</button>
+ </div>
+ <div class="product">
+ <h3 class="productTitle" id="searchResults">Mobile</h3>
+ <p>Description of Product 2</p>
+ <img src="https://th.bing.com/th/id/OIP.0gNxvjgxQbHupxiFDInvRQHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product 2 Image">
+ <button class="addToCartButton" (click)="addToCart('Product 2')">Add to Cart</button>
+ </div>
+ <div class="product">
+ <h3 class="productTitle" id="searchResults">Mouse</h3>
+ <p>Description of Product 3</p>
+ <img src="https://th.bing.com/th/id/OIP.t7qjTxf76SkRzkMEsQMW6gHaF3?w=233&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Product 3 Image">
+ <button class="addToCartButton" (click)="addToCart('Product 3')">Add to Cart</button>
+ </div>
+</div>
+<p id="cartItemCount">Cart Count : {{ cartItemCount }}</p>
